@@ -7,6 +7,7 @@ public class MainClass {
     public static void main(String[] args) {
         EmployeeDao employeeDao = new EmployeeDaoImpl();
         
+        
 //        for (Employee emp : employeeDao.getAllEmployee()) {
 //	         System.out.println("Employee: [Id : "+emp.getId()+
 //                        ", Name : "+emp.getFirstName()+" ]"+
@@ -15,5 +16,6 @@ public class MainClass {
 //                        ", Date : "+emp.getData()+" ]"+
 //                        ", Typic salary : "+emp.getAverageSalary()+" ]");
 //	      }
+        System.out.println("średnia wynosi : "+employeeDao.getAverageSalary());
     }
 }

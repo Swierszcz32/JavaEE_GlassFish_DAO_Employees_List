@@ -19,6 +19,7 @@ public class NewServlet extends HttpServlet {
             throws ServletException, IOException {
         
         request.setAttribute("employees", employeeDaoImpl.getAllEmployee());
+        request.setAttribute("average", employeeDaoImpl.getAverageSalary());
         
         request.getRequestDispatcher("/WEB-INF/newjsp.jsp").forward(request, response);
     }

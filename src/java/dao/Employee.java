@@ -7,7 +7,6 @@ public class Employee {
     
     private String firstName;
     private String lastName;
-//    private int id;
     private double salary;
     private LocalDate data;
 //    private String averageSalary;
@@ -16,7 +15,6 @@ public class Employee {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
-//        this.id = id;
         this.salary = salary;
         this.data = data;
 //        this.averageSalary = averageSalary;
@@ -36,14 +34,6 @@ public class Employee {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public void setId(int id) {
-//        this.id = id;
-//    }
 
     public double getSalary() {
         return salary;
