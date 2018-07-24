@@ -7,19 +7,19 @@ public class Employee {
     
     private String firstName;
     private String lastName;
-    private int id;
+//    private int id;
     private double salary;
     private LocalDate data;
-    private String averageSalary;
+//    private String averageSalary;
 
-    public Employee(String firstName, String lastName, int id, double salary, LocalDate data, String averageSalary) {
+    public Employee(String firstName, String lastName, double salary, LocalDate data) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
-        this.id = id;
+//        this.id = id;
         this.salary = salary;
         this.data = data;
-        this.averageSalary = averageSalary;
+//        this.averageSalary = averageSalary;
     }
     public String getFirstName() {
         return firstName;
@@ -37,13 +37,13 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public double getSalary() {
         return salary;
@@ -61,11 +61,11 @@ public class Employee {
         this.data = data;
     }
 
-    public String getAverageSalary() {
-        return averageSalary;
-    }
-
-    public void setAverageSalary(String averageSalary) {
-        this.averageSalary = averageSalary;
-    }
+//    public String getAverageSalary() {
+//        return averageSalary;
+//    }
+//
+//    public void setAverageSalary(String averageSalary) {
+//        this.averageSalary = averageSalary;
+//    }
 }
