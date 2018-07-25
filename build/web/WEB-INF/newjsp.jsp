@@ -4,6 +4,8 @@
     Author     : adizw
 --%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -123,7 +125,10 @@
                         <td>${loop.index+1}.</td>
                         <td>${e.firstName} ${e.lastName}</td>
                         <td>${e.salary}</td>
-                        <td>${e.data}</td>
+                        <td>
+                            <fmt:parseDate value="${e.data}" pattern="yyyy-MM-dd" var="parsedDate" type="date" />
+                            <fmt:formatDate value="${parsedDate}" />
+                        </td>
                         <td>
                             <c:choose>
                                 <c:when test="${ e.salary > average+1.0}">
